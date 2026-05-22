@@ -740,4 +740,70 @@ button:hover{
   }
 
 }
-  
+  .navbar{
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 8%;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:1000;
+  background:rgba(7,17,31,0.85);
+  backdrop-filter:blur(12px);
+}
+
+.logo{
+  font-size:1.5rem;
+  font-weight:800;
+  background:linear-gradient(to right,#6c63ff,#00c2ff);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+nav{
+  display:flex;
+  gap:30px;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  font-weight:500;
+  transition:0.3s;
+}
+
+nav a:hover{
+  color:#00c2ff;
+}
+
+.menu-toggle{
+  display:none;
+  font-size:1.5rem;
+  cursor:pointer;
+}
+
+@media(max-width:768px){
+
+  .menu-toggle{
+    display:block;
+  }
+
+  nav{
+    position:absolute;
+    top:80px;
+    left:0;
+    width:100%;
+    background:#07111f;
+    flex-direction:column;
+    padding:30px;
+    gap:20px;
+    display:none;
+  }
+
+  nav.active{
+    display:flex;
+  }
+
+}
