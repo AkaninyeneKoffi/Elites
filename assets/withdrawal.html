@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elite Returns | Withdrawal Request</title>
+
+<!-- GOOGLE FONT -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- FONT AWESOME -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="elites.css">
+
+</head>
+<body class="bodywithdrawal">
+
+<div class="withdraw-container">
+
+  <a href="/index.html" class="back-link">
+    <i class="fas fa-arrow-left"></i>
+    Back To Homepage
+  </a>
+
+  <div class="logo">Elite Returns</div>
+
+  <h1>Withdrawal Request</h1>
+
+  <p class="subtitle">
+    Submit your withdrawal request securely. Our finance team will review and process your payout request promptly.
+  </p>
+
+<form id="withdrawForm">
+
+  <div class="form-grid">
+
+    <div class="input-group">
+      <label>Full Name</label>
+      <input 
+        type="text"
+        name="fullName"
+        placeholder="John Doe"
+        required>
+    </div>
+
+    <div class="input-group">
+      <label>Email Address</label>
+      <input 
+        type="email"
+        name="email"
+        placeholder="example@email.com"
+        required>
+    </div>
+
+    <div class="input-group">
+      <label>Phone Number</label>
+      <input 
+        type="tel"
+        name="phone"
+        placeholder="+1 000 000 0000"
+        required>
+    </div>
+
+    <div class="input-group">
+      <label>Withdrawal Amount</label>
+      <input 
+        type="number"
+        name="amount"
+        placeholder="$0.00"
+        required>
+    </div>
+
+    <div class="input-group full">
+      <label>Preferred Withdrawal Method</label>
+
+      <select name="method" required>
+        <option value="">Select Withdrawal Method</option>
+        <option>Bank Transfer</option>
+        <option>Bitcoin (BTC)</option>
+        <option>Ethereum (ETH)</option>
+        <option>USDT (TRC20)</option>
+        <option>USDT (BEP20)</option>
+      </select>
+    </div>
+
+    <div class="input-group">
+      <label>Bank Name</label>
+      <input 
+        type="text"
+        name="bankName"
+        placeholder="Enter bank name">
+    </div>
+
+    <div class="input-group">
+      <label>Account Holder Name</label>
+      <input 
+        type="text"
+        name="accountHolder"
+        placeholder="Enter account holder name">
+    </div>
+
+    <div class="input-group">
+      <label>Account Number</label>
+      <input 
+        type="text"
+        name="accountNumber"
+        placeholder="Enter account number">
+    </div>
+
+    <div class="input-group">
+      <label>Routing / SWIFT Code</label>
+      <input 
+        type="text"
+        name="swift"
+        placeholder="Enter routing or SWIFT code">
+    </div>
+
+    <div class="input-group full">
+      <label>Wallet Address (For Crypto Withdrawals)</label>
+
+      <textarea 
+        name="wallet"
+        placeholder="Paste wallet address here"></textarea>
+    </div>
+
+  </div>
+
+  <div class="notice">
+
+    <i class="fas fa-shield-halved"></i>
+
+    <p>
+      Elite Returns does not request debit card PINs, CVV numbers, online banking passwords, or sensitive authentication credentials.
+    </p>
+
+  </div>
+
+  <button type="submit">
+    Submit Withdrawal Request
+  </button>
+
+</form>
+<script src="elites.js"></script>
+</body>
+</html>
